@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cryptoautomation
+    username: root
+    password: wlals980713
+  sql:
+    init:
+      mode: never
+
+
