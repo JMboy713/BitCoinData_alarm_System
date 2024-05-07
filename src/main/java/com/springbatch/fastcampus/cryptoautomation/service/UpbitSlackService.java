@@ -24,7 +24,7 @@ public class UpbitSlackService {
         sb.append(" price =  ");
         sb.append(tickerByMarket.getTrade_price());
 
-//        slackHttpClient.send(sb.toString());
+        slackHttpClient.send(sb.toString());
         repository.save(market,String.valueOf(tickerByMarket.getTrade_price()));
     }
 

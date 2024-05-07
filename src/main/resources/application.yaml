@@ -1,8 +1,13 @@
 spring:
+  batch:
+    job:
+      enabled: true
+      name: ${job.name:NONE}
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cryptoautomation
-    username: root
+
+    url: jdbc:mysql://cryptoautomation.curfsiy9kjqj.ap-northeast-2.rds.amazonaws.com:3306/cryptoautomation
+    username: admin
     password: wlals980713
   sql:
     init:
