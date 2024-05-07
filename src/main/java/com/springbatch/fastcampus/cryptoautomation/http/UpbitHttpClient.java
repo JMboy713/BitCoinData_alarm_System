@@ -24,9 +24,8 @@ public class UpbitHttpClient {
                 headers
         );
         ObjectMapper objectMapper = new ObjectMapper();
-        return  objectMapper.readValue(execute, new TypeReference<List<UpbitTickerDto>>() {
-                }
-        ).stream().findFirst().get();
+        return objectMapper.readValue(execute, new TypeReference<List<UpbitTickerDto>>() {}
+        ).stream().findFirst().orElse(null);
 
     }
 }
