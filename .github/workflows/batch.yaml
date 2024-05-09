@@ -1,8 +1,8 @@
 name: 가상화폐 시세 조회
 
 on:
-  schedule:
-    - cron: '0 13,16,20 * * *'
+  #schedule:
+  #  - cron: '0 13,16,20 * * *'
   workflow_dispatch:
 
 jobs:
